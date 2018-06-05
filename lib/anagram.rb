@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(possible_anagrams)
-    possible_anagrams.detect{|current_word| current_word.to_chars.sort.join == word.to_chars.sort.join}
+    possible_anagrams.detect{|current_word| current_word.chars.sort.join == word.chars.sort.join}
   end
 
 end
