@@ -4,10 +4,10 @@ class Anagram
 
   def initialize(word)
     @word = word;
-  end 
+  end
 
   def match(possible_anagrams)
-    
+    possible_anagrams.detect{|current_word| current_word.sort == word.sort}
   end
-  
+
 end
